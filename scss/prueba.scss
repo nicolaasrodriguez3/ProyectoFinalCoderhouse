@@ -1,0 +1,473 @@
+/*=========Reset=======*/
+*{ 
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+   
+
+}
+
+/*=========HEADER=======*/
+
+.headerA{
+
+
+
+    .header__logo{
+
+        font-family: 'Russo One', sans-serif;
+        font-size: 2em;
+        letter-spacing: 1.5px;
+        color: rgb(255, 255, 255);
+        margin-left: 10px;
+        text-decoration: none;
+
+
+    }
+
+    .header__logo:hover{
+
+        transition: all 0.4s;
+        font-size: 2.5em;
+
+    }
+
+    .header__nav{
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 10;
+
+
+
+
+    }
+
+    .header__nav--verde{
+
+        background-color: #053949;
+
+
+
+    }
+
+    .header__lista{
+
+        list-style: none;
+        
+    }
+
+    .header__item{
+
+        text-decoration: none;
+        display: inline-block;
+        justify-content: space-between;
+        padding: 10px 30px;
+        margin-right: 30px;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+
+
+
+    }
+
+    .header__link{
+
+        text-decoration: none;
+        padding: 5px 10px 5px 10px;
+        border-radius: 2px;
+
+
+    }
+
+
+    .header__link:hover{
+
+        background-color: #9da4a759;
+        transition: all 0.5s;
+      
+
+    }
+
+    .header__link--white{
+
+        color: white;
+
+    }
+
+ 
+
+}
+
+/*=========MAIN=======*/
+
+.mainA{
+
+    background: rgb(236,236,236);
+    background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 100%);
+
+    .mainA__titulo{
+
+        color: rgba(19, 1, 1, 0.883);
+        text-align: center;
+        font-size: 45px;
+        padding-top: 60px;
+        font-family: 'Prompt', sans-serif;
+        text-decoration: overline;
+    }
+
+    .mainA__subtitulo{
+
+
+        color: rgba(19, 1, 1, 0.883);
+        text-align: center;
+        font-size: 40px;
+        padding-top: 60px;
+        font-family: 'Prompt', sans-serif;
+
+
+    }
+    .mainA__mapa{
+
+        height: 350px;
+        width: 100%; 
+        margin-bottom: 30px;
+
+
+    }
+
+
+
+}
+
+/*--------FOOTER-----------*/
+.footer{
+
+   background-color: #053949;
+
+   &__navegation{
+
+        ul{
+
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            
+
+        }
+
+        li{
+
+          padding: 10px;
+          
+
+
+        }
+
+        a{
+
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+
+
+        }
+
+        :hover{
+             color: rgb(102, 100, 100);
+
+        }
+
+
+   }
+
+   &__RRSS{
+
+  
+
+    h3{
+
+        margin-top: 22px;
+        font-size: 19px;
+        color: white;
+
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+
+   }
+
+    /* en esta clase se aplico el extend */
+   &__contacto{
+
+    @extend.footer__RRSS;
+    ul{
+
+        list-style: none;
+       
+
+    }
+
+    li{
+
+        color: white;
+        padding: 10px;
+        
+    }
+
+
+
+   }
+
+   &__texto{
+
+    
+
+    p{
+
+        color: white;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    
+
+
+   }
+   
+
+
+}
+
+
+.boton{
+    
+    color: white;
+
+
+
+
+
+
+
+    
+}
+
+.boton--color{
+
+
+    background-color: blue;
+
+}
+
+.boton--size{
+
+    height: 10%;
+
+
+
+
+
+}
+
+
+.boton--modeling{
+
+        
+border-radius: 20px;
+font-weight: bold;
+
+
+
+}
+
+.boton:hover{
+
+    background-color: white;
+    color: blue;
+
+
+
+}
+
+.acercaDeNosotros{
+
+    background-image: url(../Imagenes/aboutUs.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    
+  
+
+}
+
+
+.cobertura{
+
+
+    &__localidades{
+
+
+        h3{
+
+           font-size: 20px;
+
+
+        }
+        
+        ul{
+
+            list-style: none;
+            
+
+
+        }
+
+        li{
+
+            margin: 20px;
+            font-size: 20px;
+
+
+        }
+
+
+    }
+
+ 
+
+
+
+
+
+
+
+
+}
+
+
+@mixin titulos ($fsize, $bg-color, $f-color, $f-weight ){
+
+    font-size: $fsize;
+
+    background-color: $bg-color;
+
+    color: $f-color;
+
+    font-weight: $f-weight;
+
+    
+}
+
+
+/* la clase "titulo1" sera para los h1 de las paginas del sitio*/
+
+
+.titulo1{
+
+ @include titulos( 58px, #053949, #39aca2, bold)
+
+
+
+}
+
+/* la clase "titulo2 y titulo 3" seran para los subtitulos de las paginas del sitio*/
+.titulo2{
+
+    @include titulos(24px, #39aca2 , #03423d, 100px)
+
+
+
+}
+
+
+
+.titulo3{
+
+    @include titulos(24px, #03423d , #5af0e3 , 100px)
+
+
+
+
+
+}
+
+.carousel-inner{
+
+    max-height: 36rem;
+
+
+}
+
+
+
+.nosotros{
+
+
+    span{
+
+        color: #39aca2;
+
+
+    }
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    .acercaDeNosotros{
+
+        display: none;
+    }
+
+    .nosotros{
+
+
+        width: 100% !important; 
+
+
+
+    }
+
+
+
+    
+}
+
+
+.bg{
+
+    background-image: url(../Imagenes/MaxoilDistribuciones.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#headerForm{
+
+    margin-bottom: 100px !important;
+
+
+
+
+}
+
+
+

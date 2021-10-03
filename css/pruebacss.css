@@ -1,0 +1,186 @@
+/*=========Reset=======*/
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+/*=========HEADER=======*/
+.headerA .header__logo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  color: white;
+  margin-left: 10px;
+  text-decoration: none; }
+
+.headerA .header__logo:hover {
+  transition: all 0.4s;
+  font-size: 2.5em; }
+
+.headerA .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10; }
+
+.headerA .header__nav--verde {
+  background-color: #053949; }
+
+.headerA .header__lista {
+  list-style: none; }
+
+.headerA .header__item {
+  text-decoration: none;
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-right: 30px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  font-size: 18px; }
+
+.headerA .header__link {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px; }
+
+.headerA .header__link:hover {
+  background-color: #9da4a759;
+  transition: all 0.5s; }
+
+.headerA .header__link--white {
+  color: white; }
+
+/*=========MAIN=======*/
+.mainA {
+  background: #ececec;
+  background: linear-gradient(180deg, #ececec 0%, white 100%); }
+  .mainA .mainA__titulo {
+    color: rgba(19, 1, 1, 0.883);
+    text-align: center;
+    font-size: 45px;
+    padding-top: 60px;
+    font-family: 'Prompt', sans-serif;
+    text-decoration: overline; }
+  .mainA .mainA__subtitulo {
+    color: rgba(19, 1, 1, 0.883);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+    font-family: 'Prompt', sans-serif; }
+  .mainA .mainA__mapa {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 30px; }
+
+/*--------FOOTER-----------*/
+.footer {
+  background-color: #053949;
+  /* en esta clase se aplico el extend */ }
+  .footer__navegation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; }
+  .footer__navegation li {
+    padding: 10px; }
+  .footer__navegation a {
+    text-decoration: none;
+    color: white; }
+  .footer__navegation :hover {
+    color: #666464; }
+  .footer__RRSS h3, .footer__contacto h3 {
+    margin-top: 22px;
+    font-size: 19px;
+    color: white; }
+  .footer__RRSS a, .footer__contacto a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; }
+  .footer__contacto ul {
+    list-style: none; }
+  .footer__contacto li {
+    color: white;
+    padding: 10px; }
+  .footer__texto p {
+    color: white;
+    margin-top: 250px;
+    margin-left: 50px; }
+
+.boton {
+  color: white; }
+
+.boton--color {
+  background-color: blue; }
+
+.boton--size {
+  height: 10%; }
+
+.boton--modeling {
+  border-radius: 20px;
+  font-weight: bold; }
+
+.boton:hover {
+  background-color: white;
+  color: blue; }
+
+.acercaDeNosotros {
+  background-image: url(../Imagenes/aboutUs.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%; }
+
+.cobertura__localidades h3 {
+  font-size: 20px; }
+
+.cobertura__localidades ul {
+  list-style: none; }
+
+.cobertura__localidades li {
+  margin: 20px;
+  font-size: 20px; }
+
+/* la clase "titulo1" sera para los h1 de las paginas del sitio*/
+.titulo1 {
+  font-size: 58px;
+  background-color: #053949;
+  color: #39aca2;
+  font-weight: bold; }
+
+/* la clase "titulo2 y titulo 3" seran para los subtitulos de las paginas del sitio*/
+.titulo2 {
+  font-size: 24px;
+  background-color: #39aca2;
+  color: #03423d;
+  font-weight: 100px; }
+
+.titulo3 {
+  font-size: 24px;
+  background-color: #03423d;
+  color: #5af0e3;
+  font-weight: 100px; }
+
+.carousel-inner {
+  max-height: 36rem; }
+
+.nosotros span {
+  color: #39aca2; }
+
+@media only screen and (max-width: 600px) {
+  .acercaDeNosotros {
+    display: none; }
+  .nosotros {
+    width: 100% !important; } }
+
+.bg {
+  background-image: url(../Imagenes/MaxoilDistribuciones.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+#headerForm {
+  margin-bottom: 100px !important; }

@@ -1,0 +1,1195 @@
+*{ 
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box
+
+
+}
+.logo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    color: white;
+    margin-left: 10px;
+
+
+}
+
+.logo:hover{
+
+ transition: all 0.4s;
+ font-size: 2.5em;
+
+
+
+}
+
+
+.contenedorNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    background-color: #053949;
+    width: 100%;
+    z-index: 10;
+    
+        
+}
+
+.menuDeNavegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+  
+  
+
+}
+
+.menuDeNavegacion ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-right: 30px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    border-radius: 2px;
+    
+    
+  
+
+}
+.menuDeNavegacion ul li a {
+    color: rgb(168, 167, 167);
+    
+    
+  
+
+}
+
+
+.menuDeNavegacion ul li:hover{
+
+    background-color: #9da4a759;
+    transition: all 0.5s;
+
+
+
+}
+
+.menuDeNavegacion ul li a:hover{
+    color: white;
+    transition: all 0.4s;
+
+}
+
+
+.menuDelFooter {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    justify-content: start;
+    color: rgba(250, 240, 240, 0.746);
+    padding: 10px;
+
+}
+
+.menuDelFooter ul li a{
+    font-size: 16px;
+    color: rgba(250, 240, 240, 0.746);
+    text-decoration: none;
+    padding: 5px;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+
+   
+   
+}
+
+.titulosFooter{
+
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+
+
+
+}
+.redesSocialesFooter{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: start;
+    color: rgba(250, 240, 240, 0.746); 
+    padding: 10px;
+    order: 0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.redesSocialesFooter ul li{
+    font-size: 16px;
+    color: rgba(250, 240, 240, 0.746);
+    text-decoration: none;
+    padding: 10px;
+    list-style: none;
+     
+}
+
+.datosDeContactoFooter{
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: start;
+    color: rgba(250, 240, 240, 0.746);  
+    padding: 10px;
+    order: 1;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+
+}
+
+.datosDeContactoFooter ul li{
+    font-size: 16px;
+    color: rgba(250, 240, 240, 0.746);
+    text-decoration: none;
+    padding: 10px;
+    list-style: none;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imagenesDelMain{
+    background-image: url(../multimedia/Distribuidores\ de\ lubricantes.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 540px;
+   align-items: center;
+ 
+}
+
+
+.imagenesDeNosotros{
+
+    background-image: url(../multimedia/FrenteDelNeogcio2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 540px;
+    background-position-x: center;
+
+
+}
+
+
+.imagenDeMarcas{
+   
+    background-image: url(../multimedia/ImagenDeMarcas.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 540px;
+   
+
+}
+
+.contenedorContacto{
+
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #273f38;
+    border-radius: 10px;
+    font-weight: 500;
+    opacity: .9 ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 100px;
+    width: 700px;
+
+
+}
+
+.mainContacto{
+
+    background-image: url(../multimedia/fondoContacto.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: "s1 s1"
+                        "s2 s2";
+    padding-top: 8rem;
+    
+    
+}
+
+.mainContacto h1{
+
+    font-family: 'Prompt', sans-serif;
+    font-size:60px;
+    padding-bottom: 30px;
+    grid-area: s1;
+    align-self: center;
+    margin-bottom: 25px;
+    
+    
+}
+
+
+
+.contenedorMainContacto{
+
+    grid-area: s2;
+    align-self: center;
+    justify-self: center;
+ 
+
+
+}
+
+.mainContacto ul {
+
+    text-decoration: none;
+    list-style:circle;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+
+.textoDelFooter {
+    color: rgba(255, 255, 255, 0.609);
+    font-weight: 500;
+    font-size: 15px;
+    order: 4;
+    align-items: flex-start;
+} 
+
+
+
+.marcasAsociadas{
+
+    font-family: 'Prompt', sans-serif;
+    color:#fff;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    text-align: center;
+
+
+}
+
+/*Empieza GRIDS*/
+.mainDeMarcas{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "titulo titulo titulo titulo"
+                        "marcaA marcaA contenidoA contenidoA"
+                        "marcaB marcaB contenidoB contenidoB"
+                        "productos productos productos productos";
+
+    height: 1300px;
+
+}
+
+.logoPetronas{
+
+    grid-area: marcaA;
+    background-image: url(../multimedia/logoPetronas.png);
+    background-size: cover;
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    background-position-y: center;
+    background-position-x: center;
+    justify-self: center;
+    opacity: 1;
+}
+
+.logoWega{
+
+    grid-area: contenidoB;
+    background-image: url(../multimedia/logoWega.png);
+    background-size: cover;
+    height: 90%;
+    width: 90%;
+    border: 1px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position-y: center;
+    background-position-x: center;
+   
+
+
+}
+
+.logoPetronas:hover{
+
+    transition: all 500ms;
+    width: 95%;
+    height: 95%;
+
+}
+
+.logoWega:hover{
+
+    opacity: 1;
+    transition: all 500ms;
+  
+    width: 95%;
+    height: 95%;
+    
+
+
+}
+
+
+
+.contenidoA{
+
+    grid-area: contenidoA;
+    background-color: #24272691;
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    border-radius: 5px;
+
+}
+
+.contenidoB{
+
+    grid-area: marcaB;
+    background-color: #24272691;
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+
+
+.tablas{
+
+ grid-area: productos;
+ 
+
+}
+
+.tituloMarcas{
+    grid-area: titulo;
+    align-self: center;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+
+
+
+.ParrafoDeMarcas{
+  font-family:'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  padding: 30px 30px 30px 30px
+
+
+}
+
+.mainDeClientes{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas: "contactanos"
+                         "formulario";
+
+    height: auto;
+
+
+}
+
+#Ingreso{
+
+    grid-area: "contactanos";
+    align-self: center;
+    margin-top: 20px;
+}
+
+.contenedorFormularioClientes{
+  
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.5fr 0.5fr ;
+    grid-template-areas: "sA"
+                         "sB";
+}
+
+.formLocation{
+
+    grid-area: "sB";
+    justify-self: center;
+    align-self: center;
+
+
+}
+
+
+.bienvenidos{
+
+    grid-area: "sA";
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    
+
+
+
+}
+
+/*Estilos para apartado de NOSOTROS*/
+
+.mainDeNostros{
+    height: 700px;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    height: auto;
+    grid-template-areas: "s1 s1 s1 s1"
+                        "s2 s2 s2 s2"
+                        "s3 s3 s4 s4";
+
+
+
+}
+
+#parrafoQuienesSomos {
+
+    font-size: 22px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #24272691;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    grid-area: s2;
+    align-self: center;
+    justify-self: center;
+    
+
+
+}
+
+
+.tituloQuienesSomos{
+
+    grid-area: s1;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    box-shadow: 10px 5px 5px rgb(1, 57, 71);
+    background-color: #098f9e;
+    border-radius: 5px;
+
+}
+
+
+.mapaQuienesSomos{
+
+ grid-area: s4;
+ width:90%;
+ height:90%
+
+
+}
+
+
+
+.localidades{
+
+    grid-area: s3;
+  
+
+}
+
+
+
+
+.zonasDeCobertura{
+
+   
+    font-size: 25px;
+    list-style:circle;
+    color:#fff;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    box-shadow: 10px 5px 5px rgb(1, 50, 63);
+    width: 70%;
+    height: 50%;
+
+}
+/* CIERRA Estilos para apartado de NOSOTROS*/
+
+
+/*Estilos para FORMULARIOS*/
+
+.formulario{
+    background-color:  #273f38;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: .9 ;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    height: 450px;
+ 
+
+
+
+
+}
+
+.formularioNegro{
+    background-color:  #193140;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    opacity: .9 ;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+
+
+
+}
+
+.formulario fieldset{
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+   
+}
+
+.formulario fieldset input{
+    border-radius: 10px;
+    border: #193140;
+    height: 35px;
+    padding: 5px;
+    width: 80%;
+   margin-bottom: 70px;
+
+
+}
+
+.formulario fieldset textarea{
+
+    border-radius: 10px;
+    border: #193140;
+    height: 150px;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.formulario fieldset label{
+
+    font-size: 18px;
+    padding-bottom: 20px;
+  
+}
+
+.formulario fieldset legend{
+
+    font-size: 20px;
+    font-weight: 100px;
+    margin: 10px;
+
+
+
+}
+
+.botonFormulario{
+
+ height: 500px;
+
+
+
+}
+
+
+.datosDeContacto{
+
+    font-size: 12px;
+    padding: 20px;
+
+}
+
+.datosDeContacto ul{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+
+
+}
+
+.contenedorFormBoot{
+
+    grid-area: "sB";
+    width: 30%;
+    justify-self: center;
+    align-self: center;
+    height: auto;
+    background-color: #d5e6eb;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+}
+
+
+.marcaA{
+
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 22px;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px;
+   
+
+
+
+}
+
+/*Boton de WathsApp*/
+
+.btn-wsp{
+
+    position: fixed;
+    width: 80px;
+    line-height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.3);
+    z-index: 100;
+
+}
+
+.btn-wsp:hover {
+
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+
+}
+
+/* Cierra Boton de WathsApp*/
+
+
+
+
+
+
+
+
+/*Estilos para Etiquetas*/
+
+h1{
+    color: rgb(2, 47, 36);
+    text-align: center;
+    font-size: 45px;
+    padding-top: 60px;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+h2{
+
+    color: rgb(2, 47, 36);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: 'Prompt', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 30px 0 30px;
+
+
+}
+
+footer {
+    background-color: #193140;
+    color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+header{
+    background-color:#193140;
+    color: white;
+    
+
+}
+
+header a {
+    
+     color: white;
+
+
+}
+
+
+main{
+
+    background-color: #e2e2e2;
+    height: 600px;
+    width: 100% vh;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* CIERRA Estilos para Etiquetas*/
+
+/*ESTILOS DEL TABLA*/
+table{
+
+    padding: 7px;
+    background-color: #1C5359;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    height: 300px;
+
+
+
+
+}
+
+tr {
+
+    background-color: #44a58962;
+    padding: 30px;
+
+
+
+}
+
+
+
+
+
+
+
+
+/*ESTILOS DEL INDEX*/
+
+
+
+.mainIndex{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    height: auto;
+    grid-template-areas: "s1 s1 s1 s1"
+                        "s2 s2 s3 s3"
+                        "s4 s4 s5 s5";
+
+
+
+
+
+}
+
+
+
+.mapa{
+    grid-area:s3;
+    height: 80%;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(5, 44, 44, 0.507);
+    border-color: rgb(0, 0, 0);
+    border: 4px;
+
+}
+
+
+
+
+.parrafoDelIndex{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 18vh;
+    grid-area: s2;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(5, 44, 44, 0.507);
+
+}
+
+.titulosIndex{
+
+    grid-area: s1;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Prompt', sans-serif; ;
+    border-color: #03263b91;
+
+}
+
+
+.imagenDeposito{
+
+    grid-area: s4;
+    background-image: url(../multimedia/Concé\ nuestros\ depositos.png);
+    background-size: cover;
+    height: 90%;
+    width: 90%;
+    border: 1px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position-y: center;
+    background-position-x: center;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.imagenPartner{
+
+    grid-area: s5;
+    background-image: url(../multimedia/Distribudor\ oficial\ de\ Petronas.png);
+    background-size: cover;
+    height: 90%;
+    width: 90%;
+    border: 1px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position-y: center;
+    background-position-x: center;
+    justify-self: center;
+    align-self: center;
+
+
+
+
+}
+/*ESTILOS DEL INDEX*/
+
+
+
+/*Desafio MediaQuery*/
+@media only screen and (max-width:600px) {
+
+
+    .mainIndex{
+
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+        height: auto;
+        grid-template-areas:"s1"
+                            "s2"
+                            "s3"
+                            "s4"
+                            "s5"
+
+    }
+
+
+
+    .mapa{
+        grid-area:s3;
+        height: 400px;
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+        background-color: rgba(95, 13, 19, 0.507);
+        border-color: black;
+        border:10px;
+        
+    
+    }
+    
+    
+    
+    
+    .parrafoDelIndex{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 18vh;
+        grid-area: s2;
+        justify-self: center;
+        align-self: center;
+        background-color: rgba(205, 223, 223, 0.507);
+        width: 90%;
+        height: 90%;
+    
+    }
+    
+    .titulosIndex{
+    
+        grid-area: s1;
+        justify-self: center;
+        align-self: center;
+        font-family: 'Prompt', sans-serif; ;
+    
+    }
+    
+    
+    .imagenDeposito{
+    
+        grid-area: s4;
+        background-image: url(../multimedia/Concé\ nuestros\ depositos.png);
+        background-size: cover;
+        height: 90%;
+        width: 90%;
+        border: 1px;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position-y: center;
+        background-position-x: center;
+        justify-self: center;
+        align-self: center;
+    
+    }
+    
+    .imagenPartner{
+    
+        grid-area: s5;
+        background-image: url(../multimedia/Distribudor\ oficial\ de\ Petronas.png);
+        background-size: cover;
+        height: 90%;
+        width: 90%;
+        border: 1px;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position-y: center;
+        background-position-x: center;
+        justify-self: center;
+        align-self: center;
+    
+    
+    
+
+    }
+
+    .logo{
+        font-family: 'Russo One', sans-serif;
+        font-size: 2em;
+        letter-spacing: 1.5px;
+        color: white;
+    
+    
+    }
+    
+    
+    
+    .contenedorNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        top: 0px;
+        background-color: #193140;
+        flex-direction: column;
+        
+            
+    }
+    
+    .menuDeNavegacion ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      
+    
+    }
+    
+    .menuDeNavegacion ul li {
+        font-family: 'Prompt', sans-serif;
+        font-weight: 500;
+        
+      
+    
+    }
+
+
+    .imagenesDelMain{
+        background-image: url(../multimedia/Distribuidores\ de\ lubricantes.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 340px;
+    
+     
+    }
+
+
+
+
+
+
+}
+
+
+.botonesDeInicioSesion{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+
+
+}
+.botonesDeInicioSesion button{
+    padding: 10px;
+    background: rgb(2, 15, 129);
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 2px 2px  rgb(2, 43, 61);
+    color: white;
+    font-size: 15px;
+
+
+
+}
+.botonesDeInicioSesion button:hover{
+
+    background: rgb(167, 232, 235);
+    color: rgb(2, 43, 61);
+    transition: all 500ms;
+   
+
+
+}
+
+
+.botonesDeInicioSesion input{
+    padding: 10px;
+    background: rgb(2, 93, 109);
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 2px 2px  rgb(2, 43, 61);
+    color: white;
+    font-size: 15px;
+
+
+
+}
+
+.botonesDeInicioSesion input:hover{
+
+    background: rgb(208, 251, 253);
+    color: rgb(2, 43, 61);
+    transition: all 500ms;
+
+
+}
+   
+
+
+
+.imagenFormulario{
+
+    
+    background-image: url(/imagen-formulario.jpg);
+    background-position: center center;
+    background-size: contain;
+    
+
+}
+
+.bienvenidosForm{
+
+    color: black;
+}
+
+.mainForm{
+
+height: 100% !important;
+background-color: white
+
+
+}
+
+.formulariobootstrap{
+ margin-top: 100px;
+}
+
+
+
+.carousel-inner{
+
+    max-height: 39rem;
+
+
+}
