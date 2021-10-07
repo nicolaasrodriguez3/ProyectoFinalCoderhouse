@@ -5,57 +5,21 @@
   box-sizing: border-box; }
 
 /*=========HEADER=======*/
-.headerA .header__logo {
+.nav {
+  background-color: #053949;
+  z-index: 10; }
+
+.logo {
   font-family: 'Russo One', sans-serif;
-  font-size: 2em;
   letter-spacing: 1.5px;
   color: white;
   margin-left: 10px;
   text-decoration: none; }
 
-.headerA .header__logo:hover {
-  transition: all 0.4s;
-  font-size: 2.5em; }
-
-.headerA .header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 10; }
-
-.headerA .header__nav--verde {
-  background-color: #053949; }
-
-.headerA .header__lista {
-  list-style: none; }
-
-.headerA .header__item {
-  text-decoration: none;
-  display: inline-block;
-  justify-content: space-between;
-  padding: 10px 30px;
-  margin-right: 30px;
-  font-family: 'Prompt', sans-serif;
-  font-weight: 500;
-  font-size: 18px; }
-
-.headerA .header__link {
-  text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 2px; }
-
-.headerA .header__link:hover {
-  background-color: #9da4a759;
-  transition: all 0.5s; }
-
-.headerA .header__link--white {
-  color: white; }
-
 /*=========MAIN=======*/
+span {
+  color: #1aa4c7 !important; }
+
 .mainA {
   background: #ececec;
   background: linear-gradient(180deg, #ececec 0%, white 100%); }
@@ -129,8 +93,9 @@
   color: blue; }
 
 .acercaDeNosotros {
-  background-image: url(../Imagenes/aboutUs.jpg);
-  background-size: contain;
+  background-image: url(../Imagenes/imagenesMaxoil/MaxoilDistribuciones.jpg);
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 400px;
   width: 100%; }
@@ -140,10 +105,6 @@
 
 .cobertura__localidades ul {
   list-style: none; }
-
-.cobertura__localidades li {
-  margin: 20px;
-  font-size: 20px; }
 
 /* la clase "titulo1" sera para los h1 de las paginas del sitio*/
 .titulo1 {
@@ -166,7 +127,7 @@
   font-weight: 100px; }
 
 .carousel-inner {
-  max-height: 36rem; }
+  max-height: 29rem; }
 
 .nosotros span {
   color: #39aca2; }
@@ -184,3 +145,74 @@
 
 #headerForm {
   margin-bottom: 100px !important; }
+
+.logo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  color: white;
+  margin-left: 10px;
+  text-decoration: none; }
+
+.logo:hover {
+  color: #1ab7d3 !important;
+  transition: all 300ms !important; }
+
+.btn-wsp {
+  position: fixed;
+  width: 80px;
+  line-height: 80px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 9px black;
+  z-index: 100; }
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: #fff; }
+
+.icon {
+  color: white;
+  margin: 5px !important; }
+
+.icon:hover {
+  color: #818181 !important; }
+
+.bg {
+  background-image: url(../Imagenes/imagenesMaxoil/MaxoilDistribuciones.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+#news_letter {
+  background-color: #127d81;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+  #news_letter .news_letter_form {
+    width: 100%; }
+  #news_letter .form-control {
+    height: 3rem; }
+  #news_letter .btn:hover {
+    background-color: #d9e2e9;
+    color: rgba(23, 89, 109, 0.883); }
+
+#card_container .card {
+  margin: 50px;
+  transition: transform 500ms ease; }
+
+#card_container .card:hover {
+  transform: scale(1.05); }
+
+#form_contacto .form-control {
+  height: 3rem; }
+
+#form_contacto .area_texto {
+  height: 8rem !important; }
+
+#form_contacto .btn {
+  width: 8rem; }
