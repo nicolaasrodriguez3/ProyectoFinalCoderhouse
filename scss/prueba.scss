@@ -1,4 +1,6 @@
 
+@import  "_ultilities";
+
 
 /*=========Reset=======*/
 
@@ -14,11 +16,11 @@
 
 .nav{
 
- background-color: #053949;
- z-index: 10;
-
+ 
+ z-index: 10 ;
 
 }
+
 
 
 
@@ -30,58 +32,28 @@
     color: white;
     margin-left: 10px;
     text-decoration: none;
+    
+}
+
+.logo:hover{
+
+    color:red !important;
+    transition: all 300ms;
+
+
 }
 
 /*=========MAIN=======*/
 span{
-    color:#1aa4c7 !important;
+    color: $color-4 !important;
 
 }
-.mainA{
 
-    background: rgb(236,236,236);
-    background: linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 100%);
-
-   
-
-    .mainA__titulo{
-
-        color: rgba(19, 1, 1, 0.883);
-        text-align: center;
-        font-size: 45px;
-        padding-top: 60px;
-        font-family: 'Prompt', sans-serif;
-        text-decoration: overline;
-    }
-
-    .mainA__subtitulo{
-
-
-        color: rgba(19, 1, 1, 0.883);
-        text-align: center;
-        font-size: 40px;
-        padding-top: 60px;
-        font-family: 'Prompt', sans-serif;
-
-
-    }
-    .mainA__mapa{
-
-        height: 350px;
-        width: 100%; 
-        margin-bottom: 30px;
-
-
-    }
-
-
-
-}
 
 /*--------FOOTER-----------*/
 .footer{
 
-   background-color: #053949;
+   
 
  
 
@@ -285,51 +257,10 @@ font-weight: bold;
 }
 
 
-@mixin titulos ($fsize, $bg-color, $f-color, $f-weight ){
-
-    font-size: $fsize;
-
-    background-color: $bg-color;
-
-    color: $f-color;
-
-    font-weight: $f-weight;
-
-    
-}
-
-
-/* la clase "titulo1" sera para los h1 de las paginas del sitio*/
-
-
-.titulo1{
-
- @include titulos( 58px, #053949, #39aca2, bold)
-
-
-
-}
-
-/* la clase "titulo2 y titulo 3" seran para los subtitulos de las paginas del sitio*/
-.titulo2{
-
-    @include titulos(24px, #39aca2 , #03423d, 100px)
-
-
-
-}
-
-
-
-.titulo3{
-
-    @include titulos(24px, #03423d , #5af0e3 , 100px)
 
 
 
 
-
-}
 
 .carousel-inner{
 
@@ -345,7 +276,7 @@ font-weight: bold;
 
     span{
 
-        color: #39aca2;
+    color: $color-5;
 
 
     }
@@ -357,27 +288,6 @@ font-weight: bold;
 
 
 
-
-@media only screen and (max-width:600px) {
-
-    .acercaDeNosotros{
-
-        display: none;
-    }
-
-    .nosotros{
-
-
-        width: 100% !important; 
-
-
-
-    }
-
-
-
-    
-}
 
 
 .bg{
@@ -398,24 +308,7 @@ font-weight: bold;
 }
 
 
-.logo{
-
-    font-family: 'Russo One', sans-serif;
-    font-size: 2em;
-    letter-spacing: 1.5px;
-    color: white;
-    margin-left: 10px;
-    text-decoration: none;
-
-
-  }
-.logo:hover{
-
-    color:rgb(26, 183, 211) !important ;
-    transition: all 300ms !important;
-
-
-}
+/*------------------ Boton de Wpp-----------------------------*/
  .btn-wsp{
 
   position: fixed;
@@ -458,7 +351,7 @@ font-weight: bold;
     color: rgb(129, 129, 129) !important;
 
 }
-
+/*------------------ Cierra  Boton de Wpp-----------------------------*/
 .bg{
 
     background-image: url(../Imagenes/imagenesMaxoil/MaxoilDistribuciones.jpg);
@@ -469,7 +362,9 @@ font-weight: bold;
 
 #news_letter{
 
-    background-color: #127d81;
+    background-image: url(../Imagenes/imagen-auto-f1.jpg);
+    background-position: center center;
+    background-size: cover;
     padding-bottom: 30px ;
     padding-top: 30px;
 
@@ -489,6 +384,40 @@ font-weight: bold;
 
     background-color: rgb(217, 226, 233);
     color: rgba(23, 89, 109, 0.883) ;
+
+ }
+ .contenedor-newsletter{
+
+    background-color: rgba(0, 0, 0, 0.534);
+    
+    .texto-copy{
+        color: rgb(42, 250, 233) !important;
+
+    }
+
+    .btn{
+        
+      background-color:$color-4;
+      border-color: $color-1;
+      border: 3px;
+      width: 100%;
+      height: 20%;
+      margin: 0 auto;
+     font-size: 1.2rem;
+            
+        
+     
+
+
+    }
+
+    .btn:hover{
+
+        background-color:$color-3 ;
+        color: white;
+
+    }
+
 
  }
 
@@ -527,9 +456,69 @@ font-weight: bold;
     }
 
     .btn{
+        background-color:$color-4;
+        border-color: $color-1;
+        border: 3px;
+        width: 25%;
+        height: 20%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        
+    }
+    
+    .btn:hover{
 
-        width: 8rem;
+        background-color: $color-3;
+
+
 
     }
 
 }
+
+#form-contacto{
+
+    background-image:url(../Imagenes/imagenes-nosotros/aboutUs.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+#marca-1{
+
+    .btn{
+        background-color:$color-4;
+        border-color: $color-1;
+        border: 3px;
+        width: 100%;
+        height: 20%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        
+    }
+    
+    .btn:hover{
+
+        background-color: $color-3;
+
+
+
+    }
+
+ #contenedor{
+    
+    transition: transform 500ms ease;
+    
+
+ }
+
+ #contenedor:hover{
+
+    transform: scale(1.05);
+
+ }
+
+}
+
+

@@ -1,3 +1,26 @@
+/*=========VARIABLES=======*/
+/*=========PALETA DE COLORES 1======*/
+/*=====================MEDIAS QUERIES=====================*/
+@media only screen and (max-width: 600px) {
+  /*=====================MEDIAS QUERIES SECCION DE MARCAS=====================*/
+  #marca-1 .btn {
+    height: 15% !important; }
+  #titulo-marcas {
+    width: 100% !important; }
+  /*=====================MEDIAS QUERIES SECCION DE NOSOTROS=====================*/
+  #mapa-nostros {
+    height: 200% !important;
+    width: 100% !important; }
+  /*=====================MEDIAS QUERIES SECCION DEL INDEX=====================*/
+  .carousel {
+    display: none; }
+  #titulo-index {
+    margin-top: 30px;
+    width: 100%; }
+  #titulo-mapa {
+    width: 100%;
+    font-size: 24px !important; } }
+
 /*=========Reset=======*/
 * {
   margin: 0;
@@ -6,7 +29,7 @@
 
 /*=========HEADER=======*/
 .nav {
-  background-color: #053949;
+  background-color: #193140;
   z-index: 10; }
 
 .logo {
@@ -18,18 +41,10 @@
 
 /*=========MAIN=======*/
 span {
-  color: #1aa4c7 !important; }
+  color: #6AA695 !important; }
 
 .mainA {
-  background: #ececec;
   background: linear-gradient(180deg, #ececec 0%, white 100%); }
-  .mainA .mainA__titulo {
-    color: rgba(19, 1, 1, 0.883);
-    text-align: center;
-    font-size: 45px;
-    padding-top: 60px;
-    font-family: 'Prompt', sans-serif;
-    text-decoration: overline; }
   .mainA .mainA__subtitulo {
     color: rgba(19, 1, 1, 0.883);
     text-align: center;
@@ -43,7 +58,6 @@ span {
 
 /*--------FOOTER-----------*/
 .footer {
-  background-color: #053949;
   /* en esta clase se aplico el extend */ }
   .footer__navegation ul {
     list-style: none;
@@ -130,7 +144,7 @@ span {
   max-height: 29rem; }
 
 .nosotros span {
-  color: #39aca2; }
+  color: #B8D9C6; }
 
 @media only screen and (max-width: 600px) {
   .acercaDeNosotros {
@@ -190,7 +204,9 @@ span {
   background-size: cover; }
 
 #news_letter {
-  background-color: #127d81;
+  background-image: url(../Imagenes/imagen-auto-f1.jpg);
+  background-position: center center;
+  background-size: cover;
   padding-bottom: 30px;
   padding-top: 30px; }
   #news_letter .news_letter_form {
@@ -200,6 +216,21 @@ span {
   #news_letter .btn:hover {
     background-color: #d9e2e9;
     color: rgba(23, 89, 109, 0.883); }
+  #news_letter .contenedor-newsletter {
+    background-color: rgba(0, 0, 0, 0.534); }
+    #news_letter .contenedor-newsletter .texto-copy {
+      color: #2afae9 !important; }
+    #news_letter .contenedor-newsletter .btn {
+      background-color: #6AA695;
+      border-color: #193140;
+      border: 3px;
+      width: 100%;
+      height: 20%;
+      margin: 0 auto;
+      font-size: 1.2rem; }
+    #news_letter .contenedor-newsletter .btn:hover {
+      background-color: #347367;
+      color: white; }
 
 #card_container .card {
   margin: 50px;
@@ -215,4 +246,36 @@ span {
   height: 8rem !important; }
 
 #form_contacto .btn {
-  width: 8rem; }
+  background-color: #6AA695;
+  border-color: #193140;
+  border: 3px;
+  width: 25%;
+  height: 20%;
+  margin: 0 auto;
+  font-size: 1.2rem; }
+
+#form_contacto .btn:hover {
+  background-color: #347367; }
+
+#form-contacto {
+  background-image: url(../Imagenes/imagenes-nosotros/aboutUs.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+#marca-1 .btn {
+  background-color: #6AA695;
+  border-color: #193140;
+  border: 3px;
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+  font-size: 1.2rem; }
+
+#marca-1 .btn:hover {
+  background-color: #347367; }
+
+#marca-1 #contenedor {
+  transition: transform 500ms ease; }
+
+#marca-1 #contenedor:hover {
+  transform: scale(1.05); }

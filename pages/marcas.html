@@ -43,59 +43,77 @@
     <header class="headerA mb-5">
 
 
-        <nav class="navbar nav  navbar-expand-lg navbar-dark sticky-top ">
-
-            <div class=" contenedor container-fluid">
-              <a class="navbar-brand logo fs-4" href="./Index.html">Max Oil</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse  navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav text-center ms-auto">
-                 <li> <a class="nav-link " aria-current="page" href="../Index.html">Inicio</a> </li>
-                 <li> <a class="nav-link " href="./nosotros.html">Nosotros</a> </li>
-                 <li> <a class="nav-link " href="./marcas.html">Marcas</a> </li>
-                 <li> <a class="nav-link" href="./clientesPrueba.html">Clientes</a> </li>
-                 <li> <a class="nav-link" href="./contacto.html">Contacto</a> </li>
-                </ul>
-              </div>
+      <nav class="navbar nav navbar-expand-lg navbar-expand-xl navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand logo fs-4" href="../index.html">Max Oil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="offcanvas offcanvas-end w-50 " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <h5 class="navbar-brand" id="offcanvasNavbarLabel">Max Oil</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
+  
+            <div class="offcanvas-body bg-dark">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./marcas.html">Marcas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./clientesPrueba.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  " href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
 
 
     </header>
 
     <main class="m-5">
 
-        <section class="w-75 mx-auto nosotros text-center pt-5 mt-5">
+        <div class="w-75 container mx-auto nosotros text-center pt-5 mt-5" id="titulo-marcas">
             <h1 class="p-3 fs-1 border-top border-3">Conoce <span>Nuestras Marcas y Productos</span></h1>
-        </section>
+        </div>
 
 
-        <section class="w-75 mx-auto nosotros text-center bg-opacity-75 bg-secondary rounded-1 text-light m-5">
+        <div class=" container-fluid  mx-auto  text-center bg-opacity-75 bg-secondary  text-light m-5">
 
-            <h2 class="p-3 fs-2  border-3">Distribuidores oficiales de primeras marcas del rubro automotor</h2>
+            <h2 class="p-3 fs-3 fw-light text-light" >Distribuidores oficiales de primeras marcas del rubro automotor</h2>
 
-        </section>
+        </div>
 
 
-        <section class="container">
+        <section class="container"id="marca-1">
           
             
-            <div class="row ">
+            <div class="row shadow mt-5 " id="contenedor">
 
-                <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center mt-3">
                     
                     <img src="../Imagenes/imagens-marcas-productos/logoPetronas.png" alt="logo-petronas "  width="350" height="160" >
 
                 </div>
 
-                <div class="col "> 
+                 <div class="col-xl-6 col-lg-6 col-md-3 mt-3  p-4" > 
 
-                    <div class="p-5 rounded text-center" >
-                        <h2 "class="text-center mb-3"> PETRONAS LUBRICANTES</h2>
-                        <p class="text-lg-start ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, adipisci! Voluptatibus deserunt impedit unde ut aliquid nostrum quos enim labore beatae, soluta minima recusandae placeat in ducimus blanditiis nihil reiciendis!</p>
-                        <a class="btn btn-primary" href="#" role="button">Quiero saber más</a>
+                    
+                        <h2 class="text-center petronas fw-light mb-3"> PETRONAS LUBRICANTES</h2>
+                        <p class="text-lg-start  ">En 90 países de todo el mundo y la mayor inversión en la infraestructura de la investigación y la red de talentos indican que hoy estamos listos para el mundo del mañana, y podemos continuar mejorando la eficiencia y calidad de nuestros productos.</p>
+                        <a class="btn btn-primary " href="#" role="button">Quiero saber más</a>
 
                 </div>
 
@@ -103,32 +121,33 @@
 
 
 
-            <div class="row">
-
-
-                <div class="col"> 
-
-                    <div class="p-5 rounded">
-                        <h2 class="text-center mb-3"> FILTROS WEGA</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, adipisci! Voluptatibus deserunt impedit unde ut aliquid nostrum quos enim labore beatae, soluta minima recusandae placeat in ducimus blanditiis nihil reiciendis!</p>
-                        <a class="btn btn-primary" href="#" role="button">Quiero saber más</a>
-                    </div>
-
-                </div>
+            <div class="row shadow mt-5" id="contenedor">
 
                 <div class="col d-flex justify-content-center">
-                    
-                    <img src="../Imagenes/imagens-marcas-productos/logoWega.png" alt="logo-petronas "  width="400" height="250" >
+                      
+                  <img src="../Imagenes/imagens-marcas-productos/logoWega.png" alt="logo-petronas "  width="400" height="250" >
 
                 </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-3 mt-3  p-4" > 
+
+                  
+                        <h2 class="text-center mb-3 fw-light"> FILTROS WEGA</h2>
+                        <p>WEGA, marca comercial de R. NETO S.A. en el mundo, provee una amplia gama de productos incluyendo: filtros de aire, aceite, combustible y cabina, lámparas halógenas, leds, bujías de encendido, bujías de precalentamiento y bocinas, que aplican a vehículos americanos, europeos y asiáticos.</p>
+                        <a class="btn btn-primary" href="#" role="button">Quiero saber más</a>
+                  
+
+                </div>
+
+
 
 
             </div>
 
 
-            <div class="row">
+            <div class="row shadow mt-5" id="contenedor">
 
-                <div class="col d-flex mt-5 justify-content-center">
+                <div class="col d-flex justify-content-center mt-3">
                     
                     <img src="../Imagenes/imagens-marcas-productos/logoPetronas.png" alt="logo-petronas "  width="350" height="160" >
 
@@ -136,13 +155,13 @@
 
 
 
-                <div class="col"> 
+                <div class="col-xl-6 col-lg-6 col-md-3 mt-3 p-4"> 
 
-                    <div class="p-5 rounded text-center" >
-                        <h2 "class="text-center mb-3"> PETRONAS LUBRICANTES</h2>
-                        <p class="text-lg-start ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, adipisci! Voluptatibus deserunt impedit unde ut aliquid nostrum quos enim labore beatae, soluta minima recusandae placeat in ducimus blanditiis nihil reiciendis!</p>
+                  
+                        <h2 class="text-center fw-light mb-3"> PETRONAS LUBRICANTES</h2>
+                        <p class="text-lg-start ">En 90 países de todo el mundo y la mayor inversión en la infraestructura de la investigación y la red de talentos indican que hoy estamos listos para el mundo del mañana, y podemos continuar mejorando la eficiencia y calidad de nuestros productos.</p>
                         <a class="btn btn-primary" href="https://www.petronas.com/" target="_blank" role="button">Quiero saber más</a>
-                    </div>
+                   
 
                 </div>
 
@@ -161,7 +180,7 @@
           <h2 class="p-3 fs-2 text-uppercase border-3"> Algunos de nuestros productos </h2>
         </div>
 
-        <div class="container d-flex justify-content-center m-5">
+        <div class="container d-flex justify-content-center m-auto">
           <div class="row d-flex justify-content-center " id="card_container">
             <div class="col-md-6 col-xl-4 mb-5">
               
@@ -190,7 +209,7 @@
 
             </div>
 
-            <div class="col-xl-4 col-md-6 align-items-center mb-5">
+            <div class="col-xl-4 col-md-6  align-items-center mb-5">
             
               <div class="card shadow" style="width: 18rem;">
                   <img src="../Imagenes/Productos/producto1.png" class="card-img-top" alt="imagen-producto">
@@ -269,12 +288,12 @@
         <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-white ">Redes</h5>
 
-          <ul class="">
+          <ul class="list-inline">
 
-            <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-linkedin-squared"></i></a></li>
-            <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-facebook-official"></i></a></li>
-            <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-instagram"></i></a></li>
-            <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-telegram"></i></a></li>
+            <li class="list-unstyled list-inline-item fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-linkedin-squared"></i></a></li>
+            <li class="list-unstyled list-inline-item fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-facebook-official"></i></a></li>
+            <li class="list-unstyled list-inline-item fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-instagram"></i></a></li>
+            <li class="list-unstyled list-inline-item fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-telegram"></i></a></li>
           </ul>
           
 

@@ -44,30 +44,47 @@
 
     <header>
 
-        <nav class="navbar nav  navbar-expand-lg navbar-dark sticky-top ">
-
-            <div class=" contenedor container-fluid">
-              <a class="navbar-brand logo fs-4" href="../Index.html">Max Oil</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse  navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav text-center ms-auto">
-                 <li> <a class="nav-link " aria-current="page" href="../Index.html">Inicio</a> </li>
-                 <li> <a class="nav-link " href="./nosotros.html">Nosotros</a> </li>
-                 <li> <a class="nav-link " href="./marcas.html">Marcas</a> </li>
-                 <li> <a class="nav-link" href="./clientesPrueba.html">Clientes</a> </li>
-                 <li> <a class="nav-link" href="./contacto.html">Contacto</a> </li>
-                </ul>
-              </div>
+      <nav class="navbar  navbar-expand-lg navbar-expand-xl navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand logo fs-4" href="../index.html">Max Oil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="offcanvas offcanvas-end w-50 " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <h5 class="navbar-brand" id="offcanvasNavbarLabel">Max Oil</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
+  
+            <div class="offcanvas-body bg-dark">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./marcas.html">Marcas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./clientesPrueba.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  " href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     
 
     </header>
 
-
-    <main class="mainForm  w-100 mt-5 mb-5"> <!--EMPIEZA EL MAIN-->
+<!------------------------------------------------EMPIEZA EL MAIN-------------------->
+    <main class="mainForm  w-100 mt-5 mb-5"> 
 
         <section class="w-75 mx-auto nosotros text-center pt-5 mt-5">
             <h1 class="p-3 fs-1 border-top border-3">Clientes <span>Inicia Sesion</span></h1>
@@ -81,7 +98,7 @@
 
                 </div>
 
-                <div class="col-xl-6 col-md-12 p-5 rounded">
+                <div class="col-xl-6 col-md-12 col-sm-12 p-5">
 
                     <h2 class="fw-bold text-center pd-5 mb-5 bienvenidosForm">Bienvenido a Max Oil</h2>
 
@@ -180,12 +197,12 @@
       <div class=" col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h5 class="text-uppercase mb-4 font-weight-bold text-white ">Redes</h5>
 
-        <ul class="">
+        <ul class="list-inline">
 
-          <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-linkedin-squared"></i></a></li>
-          <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-facebook-official"></i></a></li>
-          <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-instagram"></i></a></li>
-          <li class="list-unstyled fs-5 text-start mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light""> <i class="icon-telegram"></i></a></li>
+          <li class="fs-5 list-inline-item   mb-2"> <a href="https://linkedin.com/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-linkedin-squared"></i></a> </li>
+          <li class="fs-5 list-inline-item  mb-2"> <a href="https://facebook.com/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-facebook-official"></i></a> </li>
+          <li class="fs-5 list-inline-item  mb-2"> <a href="https://www.instagram.com/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-instagram"></i></a> </li>
+          <li class="fs-5 list-inline-item mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-telegram"></i></a> </li>
         </ul>
         
 
