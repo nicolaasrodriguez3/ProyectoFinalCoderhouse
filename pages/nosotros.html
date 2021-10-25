@@ -15,7 +15,7 @@
     
     
     <link rel="stylesheet" href="../css/pruebacss.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,43 +60,47 @@
 <body>
     <!--EMPIEZA EL HEADER-->
     <header class="headerA">
-        <div class="header__nav header__nav--verde">   
-            <a href="../index.html" class="header__logo">MAX OIL</a>   
-            <nav class="header__menu">
-                <ul class="header__lista">
-                    <li class="header__item"><a class="header__link header__link--white" href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a class="header__link header__link--white" href="./nosotros.html">Nosotros</a> </li>
-                    <li class="header__item"><a class="header__link header__link--white" href="./marcas.html"> Marcas</a></li>
-                    <li class="header__item"><a class="header__link header__link--white" href="./clientesPrueba.html"> Clientes</a> </li>
-                    <li class="header__item"><a class="header__link header__link--white" href="./contacto.html"> Contacto </a></li>
-                </ul>
-            </nav>
+      <nav class="navbar navbar-expand-lg navbar-expand-xl navbar-dark bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand logo fs-4" href="../index.html">Max Oil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="offcanvas offcanvas-end w-50 " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <h5 class="navbar-brand" id="offcanvasNavbarLabel">Max Oil</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+  
+            <div class="offcanvas-body bg-dark">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./marcas.html">Marcas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./clientesPrueba.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  " href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </nav>
+  
     
         <!--------------SLIDER DE IMAGENES--------------------->
         <div> 
 
-            <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="2500">
-                    <img src="../Imagenes/imagenes-carousel/1.png" class="d-block w-100 h-25" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../Imagenes/imagenes-carousel/2.png" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item"data-bs-interval="2000">
-                    <img src="../Imagenes/imagenes-carousel/3.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+
 
             
         </div>
@@ -112,12 +116,9 @@
     <main class="mainDeNostros m-5">
 
 
-        <section class="w-50 mx-auto nosotros text-center pt-5 m-5">
+        <div class=" container w-75 mx-auto nosotros text-center pt-5 m-5">
             <h1 class="p-3 fs-1 border-top border-3">NOSOTROS <span>Max Oil SRL</span></h1>
-        </section>
-
-
-
+        </div>
 
 
 
@@ -126,163 +127,162 @@
 
             <div class="row align-items-stretch">
 
-                <div class="col acercaDeNosotros">
-                    
-                </div>
+                <div class="col-xl-4  col-md-3  acercaDeNosotros"></div>
 
-                <div class="col  p-5 rounded">
+                <div class="col-xl-8 col-md-3  p-5 rounded">
                     <h2 class="text-center mb-3"> Sobre la empresa</h2>
-                    <p>Somos una empresa proveedora de insumos de primeras marcas, para el rubro automotor, con una amplia zona de cobertura. Desde siempre, nuestra visión ha sido ser eficientes y eficaces en la distribución de las marcas que representamos. </p> <br>
+                    <p>Smos una empresa proveedora de insumos de primeras marcas, para el rubro automotor, con una amplia zona de cobertura. Desde siempre, nuestra visión ha sido ser eficientes y eficaces en la distribución de las marcas que representamos. </p> <br>
                    <p> Por ello, a lo largo de nuestra vida, nos hemos reinventado en forma constante con el objetivo de agregar valor a los distintos actores de la cadena en la cual interactuamos.</p>
                 </div>
 
             </div>
 
 
-
-
         </div>
 
+        <div class="container-xl mt-5 mx-auto ">
+
+          <table class="table table-striped table-borderless table-success">
+            <thead>
+              <tr>
+                <th scope="col" class=""></th>
+                <th scope="col">Zona Sur</th>
+                <th scope="col">Partido de la Costa</th>
+                <th scope="col">Ciudad de La Plata</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th scope="row"></th>
+                <td>Alejandro Korn</td>
+                <td>San Bernado</td>
+                <td>Beriso</td>
+              </tr>
+
+              <tr>
+                <th scope="row"></th>
+                <td>Guernica </td>
+                <td>La Lucila</td>
+                <td>Los Hornos</td>
+              </tr>
+
+              <tr>
+                <th scope="row"></th>
+                <td >Lonchamps</td>
+                <td> Santa Teresita </td>
+                <td> City Bell </td>
+              </tr>
+
+              <tr>
+                <th scope="row"></th>
+                <td >Burzaco</td>
+                <td> San Clemente </td>
+                <td>Villa Elisa</td>
+              </tr>
+            </tbody>
+          </table
+
+          
+        </div>  
 
 
-        <div class="container shadow mt-5">
-
-
-            <div class="row">
-
-                <div class="col">
-                     
-                    <div class="container d-flex justify-content-center">
-                    <h2 class="mb-5 mt-5 w-75 text-center cobertura border-bottom border-3"> Nuestra zona de cobertura </h2>
-                    </div>
-                    <div class="row">
-
-                        <div class="col cobertura__localidades">
-                            <h3 class="mb-5 text-center">Zona Sur</h3>
-
-                            <ul>
-
-                                <li class="fs-5">Adrogue</li>
-                                <li class="fs-5">Lonchamps</li>
-                                <li class="fs-5">Guernica</li>
-                                <li class="fs-5">Burzaco</li>
-
-                            </ul>
-
-                        </div>
-
-                        <div class="col cobertura__localidades">
-                            <h3  class="mb-5 text-center ">Partido de la Costa</h3>
-                            <ul>
- 
-                                <li class="fs-5">Santa Teresita</li>
-                                <li class="fs-5">Mar Del Tuyú</li>
-                                <li class="fs-5">San Bernardo</li>
-                                <li class="fs-5">San Clemente</li>
- 
-                            </ul>
-                        </div>
-
-                        <div class="col cobertura__localidades">
-
-                            <h3  class="mb-5 text-center">La Plata</h3>
-                            <ul>
- 
-                             <li class="fs-5">City Bell</li>
-                             <li class="fs-5">Villa Elisa</li>
-                             <li class="fs-5">Los Hornos</li>
-                             <li class="fs-5"> Centro </li>
- 
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class=" container-md mapa col">
-                
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tlmj7Uv0OS8hCr5Zfck-ogMUFJJfNDLq" width="640" height="480"></iframe>
-                
-                
-                </div>
-
-
-            </div>
-
-
-
-
+        <div class="container-fluid mt-5">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tlmj7Uv0OS8hCr5Zfck-ogMUFJJfNDLq" width="100%" height="300px"></iframe>
         </div>
+
+     
 
     </main>
 
 
    <!--EMPIEZA EL FOOTER-->
-    <footer class="footer">
+   <footer class="bg-dark text-white pt-5 pb-4" id="" >
 
-    <div class="container">
+    <div class="container text-center text-md-left">
+
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          
+            <img class="mt-4 mb-4" src="../Imagenes/Diseñsintítulo.png" alt="logo" height="100px" width="300">
+            <img class="mt-4 mb-4" src="../Imagenes/afipFooter.png" alt="logo" height="100px" width="300">
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-white text-lg-start"></h5>
+
+          <ul class="text-xl-start text-lg-start  text-md-center " >
+
+            <li class="list-unstyled pt-2 mb-3" ><a class="navlink text-decoration-none text-white" href="../Index.html"> Inicio </a></li>
+            <li class="list-unstyled pt-2 mb-3"" ><a class="navlink text-decoration-none text-white" href="./nosotros.html"> Nosotros </a></li>
+            <li class="list-unstyled pt-2 mb-3"><a class="navlink text-decoration-none text-white" href="./marcas.html"> Marcas</a></li>
+            <li class="list-unstyled pt-2 mb-3"><a class="navlink text-decoration-none text-white"href="./contacto.html"> Contacto </a></li>
+            <li class="list-unstyled pt-2 mb-5"><a class="navlink text-decoration-none text-white " href="./clientesPrueba.html"> Clientes </a></li>
+
+        </ul>
+        </div>
+
+        <div class=" col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-white ">Contacto</h5>
+
+          <ul>
+
+            <li class="list-unstyled fs-6 text-start mb-4"> <i class="fs-5" > <span class="material-icons text-startt text-white"> account_circle</span> </i> Tel: 221-1132-5784 </li>
+            <li class="list-unstyled fs-6 text-start mb-4"> <i class="fs-5" > <span class="material-icons text-start text-white"> room</span>  </i>Viamonte 1142, CABA.</li>
+            <li class="list-unstyled fs-6 text-start mb-4"> <i class="fs-5" > <span class="material-icons text-start text-white"> email</span>  </i>info@maxoil.com.ar</li>
+            <li class="list-unstyled fs-6 text-start mb-4"> <i class="fs-5" > <span class="material-icons text-start text-white"> room</span> </i>Av. 72 751, La Plata</li>
+          </ul>
+          
+
+        </div>
+
+
+
+        <div class=" col-md-3 col-lg-3 col-xl-3 list-inline mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-white ">Redes</h5>
+
+          <ul class="list-inline">
+
+            <li class="fs-5 list-inline-item   mb-2"> <a href="https://linkedin.com/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-linkedin-squared"></i></a> </li>
+            <li class="fs-5 list-inline-item  mb-2"> <a href="https://facebook.com/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-facebook-official"></i></a> </li>
+            <li class="fs-5 list-inline-item  mb-2"> <a href="https://www.instagram.com/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-instagram"></i></a> </li>
+            <li class="fs-5 list-inline-item mb-2"> <a href="https://web.telegram.org/" target="_blank" class="btn-instagram nav-link text-light"> <i class="icon-telegram"></i></a> </li>
+          </ul>
+          
+
+        </div>
+
+
+
+        <hr class="mb-4">
+
+        <div class="row align-items-center d-flex justify-content-center ">
+          <div class="col-md-7 col-lg-8 d-flex justify-content-center text-center">
+
+            <p class="text-center"> Copyright ©2021 todos los derechos reservados a MaxOil Distribucions SRL</p>
+
+          </div>
     
-    <div class="row">
 
-        <div class="col">
-            <nav class="footer__navegation">
-                    
-                <ul class>
-    
-                    <li ><a  href="../index.html"> Inicio </a></li>
-                    <li ><a  href="nosotros.html"> Nosotros </a></li>
-                    <li ><a  href="marcas.html"> Marcas</a></li>
-                    <li ><a href="contacto.html"> Contacto </a></li>
-                    <li ><a  href="clientes.html"> Clientes </a></li>
-
-                </ul>
-
-            </nav>
         </div>
 
-        <div class="col footer__RRSS">
-            <h3> Redes Sociales</h3>
 
-            <div class="row">
-               <a href="https://www.linkedin.com/" target="_blank" class="btn-linkedIn"> <i class="icon-linkedin-squared"> </i> Seguinos en LinkedIn</a>  
-            </div>
-            <div class="row">
-                <a href="https://www.facebook.com/" target="_blank" class="btn-facebook"> <i class="icon-facebook-official"> </i> Seguinos en Facebook</a>  
-             </div>
-             <div class="row">
-                <a href="https://www.instagram.com/" target="_blank" class="btn-instagram"> <i class=" icon-instagram"> </i> Seguinos en Instagram</a>  
-             </div>
-             <div class="row">
-                <a href="https://web.telegram.org/" target="_blank" class="btn-instagram"> <i class=" icon-telegram"> </i> Unite a nuestro canal </a>  
-             </div>
-        </div>
-        <div class="col footer__contacto">
-            <h3> Datos de Contacto</h3>
-            <ul>
-                <li> Direccion: Av 72, La Plata</li>
-                <li> Correo Electronico: info@maxoil.com</li>
-                <li>Telefono: 221-0000-0000</li>
-            </ul>
-        </div>
-        <div class="col footer__texto">
-            <p>© 2021 MAX OIL Distribuciones SRL</p>
-        </div>
+
+
+
+      </div>
+
+
 
 
     </div>
 
-
-    </div>
-      
-
-    </footer> 
-
-    <!--CIERRA EL FOOTER-->
+  </footer>
+    <!-----------------------CIERRA EL FOOTER----------------------------->
 
    
-   
+   <!-------------------------SCRIPTS---------------------------------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
@@ -290,6 +290,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+  <!------------------------- CIERRA SCRIPTS---------------------------------->
 </body> 
 </html>

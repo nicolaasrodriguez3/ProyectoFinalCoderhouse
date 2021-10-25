@@ -1,0 +1,74 @@
+
+/*=========VARIABLES=======*/
+
+/*=========PALETA DE COLORES 1======*/
+$color-1: #193140;
+$color-2: #1C5359;
+$color-3: #347367;
+$color-4: #6AA695;
+$color-5: #B8D9C6;
+$color-bg-1:#e2e2e2; //COLOR PARA EL FONDO
+
+
+
+
+/*=====================MEDIAS QUERIES=====================*/
+
+
+
+
+@media only screen and (max-width:600px){
+
+
+    /*=====================MEDIAS QUERIES SECCION DE MARCAS=====================*/
+    #marca-1{
+   
+       .btn{
+   
+        height: 15% !important;
+    
+       }
+   
+    }
+
+   #titulo-marcas{
+
+    width: 100% !important;
+
+
+
+   }
+    /*=====================MEDIAS QUERIES SECCION DE NOSOTROS=====================*/
+   #mapa-nostros{
+
+    height: 200% !important;
+    width: 100% !important;
+
+   }
+   
+   /*=====================MEDIAS QUERIES SECCION DEL INDEX=====================*/
+   .carousel{
+
+    display: none;
+
+   }
+
+
+ #titulo-index{
+
+    margin-top: 30px;
+    width: 100%;
+
+
+ }
+
+ #titulo-mapa{
+
+    width: 100%;
+    font-size: 24px !important;
+
+
+ }
+
+
+}
